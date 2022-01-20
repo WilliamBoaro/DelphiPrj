@@ -1,0 +1,63 @@
+object IWForm2: TIWForm2
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 2
+  DesignTop = 2
+  object IWEdit1: TIWEdit
+    Left = 32
+    Top = 32
+    Width = 121
+    Height = 21
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    TabOrder = 0
+    Text = 'IWEdit1'
+  end
+  object IWEdit2: TIWEdit
+    Left = 32
+    Top = 59
+    Width = 121
+    Height = 21
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWEdit2'
+    SubmitOnAsyncEvent = True
+    TabOrder = 1
+    Text = 'IWEdit2'
+  end
+  object IWButton1: TIWButton
+    Left = 192
+    Top = 28
+    Width = 75
+    Height = 25
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    TabOrder = 2
+  end
+  object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
+    TagType = ttIntraWeb
+    RenderStyles = False
+    Left = 464
+    Top = 24
+  end
+end

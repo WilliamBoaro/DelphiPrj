@@ -1,0 +1,40 @@
+unit DataModuleHome;
+
+interface
+
+uses
+  System.SysUtils, System.Classes,
+  MVCFramework.RESTClient;
+
+type
+  TDataModule1 = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    function doGetALL : String;
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TDataModule1 }
+
+function TDataModule1.doGetALL: String;
+begin
+    LRESTClient :=  TRESTClient.Create('localhost',8080);
+  try
+    LRESTResponse := LRESTClient.doGET('/api/customers', []);
+
+    NiceMemo.Text := LRESTResponse.BodyAsString;
+
+  finally
+  LRESTClient.Free;
+
+  end;
+end.

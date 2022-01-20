@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/16 14:56:16.000.830,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 14:56:21.000.628,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/06/16 14:58:40.000.338,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\WebModule.Main.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/06/16 14:58:40.000.338,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\WebModule.Main.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2021/06/16 14:59:13.000.168,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Controller.Customer.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 14:59:28.000.610,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\prjAPI.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2021/06/16 15:06:02.000.326,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 15:06:41.000.200,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Model.Customer.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/17 15:04:02.000.035,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/17 17:09:27.000.422,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/17 17:09:52.000.245,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\dataModuleCustomerHome.pas</Transaction>
+    <Transaction>2021/06/17 17:09:52.000.245,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\dataModuleCustomerHome.dfm</Transaction>
+    <Transaction>2021/06/17 17:10:07.000.220,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\dataModuleCustomerHome.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

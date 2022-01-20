@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/03 13:31:40.000.048,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/03 13:32:11.000.836,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Unit1.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/03 13:32:11.000.836,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Unit1.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/06/03 13:32:14.000.223,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Project1.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/06/04 15:13:29.000.900,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Unit2.pas</Transaction>
+    <Transaction>2021/06/04 15:13:49.000.976,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Pessoa.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Aula pai\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

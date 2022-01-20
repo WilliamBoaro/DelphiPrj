@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/06/02 16:07:39.113,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/02 16:07:51.508,C:\Users\willi\OneDrive\Documentos\Projetos\Teste Deplhi\Teste Will\Unit1.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/02 16:07:51.508,C:\Users\willi\OneDrive\Documentos\Projetos\Teste Deplhi\Teste Will\Unit1.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/06/02 16:07:57.391,C:\Users\willi\OneDrive\Documentos\Projetos\Teste Deplhi\Teste Will\Project1.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/06/02 16:08:12.169,=C:\Users\willi\OneDrive\Documentos\Projetos\Teste Deplhi\Teste Will\UEscola.pas</Transaction>
+    <Transaction>2021/06/02 16:33:47.861,=C:\Users\willi\OneDrive\Documentos\Projetos\Teste Deplhi\Teste Will\UAluno.pas</Transaction>
+  </Transactions>
+</BorlandProject>
