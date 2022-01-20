@@ -1,0 +1,83 @@
+unit Ufilme;
+
+interface
+
+uses
+  FireDAC.Comp.Client, uDataModel;
+type
+  Tfilme = class
+  private
+    FQry       : TFDQuery;
+    Ftitulo    : string;
+    Fqtd       : integer;
+    Fid        : integer;
+    FcodDiaria : integer;
+    FcodGenero : integer;
+    procedure SetcodDiaria(const Value: integer);
+    procedure SetcodGenero(const Value: integer);
+    procedure Setid(const Value: integer);
+    procedure Setqtd(const Value: integer);
+    procedure Settitulo(const Value: string);
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    property id        : integer read Fid write Setid;
+    property titulo    : string read Ftitulo write Settitulo;
+    property codGenero : integer read FcodGenero write SetcodGenero;
+    property qtd       : integer read Fqtd write Setqtd;
+    property codDiaria : integer read FcodDiaria write SetcodDiaria;
+
+
+
+
+
+  end;
+
+implementation
+
+uses
+  Data.DB;
+
+{ Tfilme }
+
+constructor Tfilme.Create;
+begin
+  inherited;
+  FQry       := TFDQuery.Create(nil);
+  FQry.Connection := dmLocadora.FDCLocadora;
+
+end;
+
+destructor Tfilme.Destroy;
+begin
+  FQry.Free;
+  inherited;
+end;
+
+procedure Tfilme.SetcodDiaria(const Value: integer);
+begin
+  FcodDiaria := Value;
+end;
+
+procedure Tfilme.SetcodGenero(const Value: integer);
+begin
+  FcodGenero := Value;
+end;
+
+procedure Tfilme.Setid(const Value: integer);
+begin
+  Fid        := Value;
+end;
+
+procedure Tfilme.Setqtd(const Value: integer);
+begin
+  Fqtd       := Value;
+end;
+
+procedure Tfilme.Settitulo(const Value: string);
+begin
+  Ftitulo    := Value;
+end;
+
+end.

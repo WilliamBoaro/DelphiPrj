@@ -1,0 +1,57 @@
+unit UControllerProducts;
+
+interface
+
+uses
+  Uproducts;
+type
+  TControllerProduct = class
+  public
+    constructor Create;
+    destructor  Destroy; override;
+
+    procedure Save   (const AProduct : TProducts);
+    procedure Delete (const AProduct : TProducts);
+    Procedure Update (const AProduct : TProducts);
+
+    end;
+
+implementation
+
+
+
+{ TControllerProduct }
+
+constructor TControllerProduct.Create;
+begin
+
+  inherited;
+end;
+
+procedure TControllerProduct.Delete(const AProduct: TProducts);
+begin
+
+
+
+end;
+
+destructor TControllerProduct.Destroy;
+begin
+
+
+  inherited;
+end;
+
+procedure TControllerProduct.Save(const AProduct: TProducts);
+begin
+
+
+end;
+
+procedure TControllerProduct.Update(const AProduct: TProducts);
+begin
+
+
+end;
+
+end.

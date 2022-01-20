@@ -1,0 +1,13 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 512
+  Width = 948
+  object FDCLocadora: TFDConnection
+    Params.Strings = (
+      'Database=C:\dev\ProjetoLocadora\DataBase\Locadora.db'
+      'LockingMode=Normal'
+      'DriverID=sQLite')
+    Left = 40
+    Top = 24
+  end
+end

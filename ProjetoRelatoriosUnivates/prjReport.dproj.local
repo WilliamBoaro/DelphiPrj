@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/28 09:23:57.000.026,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 13:43:59.000.213,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 13:45:02.000.180,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\dev\ProjetoRelatoriosUnivates\view\uformprincipal.dfm</Transaction>
+    <Transaction>2021/08/02 13:45:02.000.180,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\dev\ProjetoRelatoriosUnivates\view\uformprincipal.pas</Transaction>
+    <Transaction>2021/08/02 13:45:16.000.497,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj=C:\dev\ProjetoRelatoriosUnivates\prjReport.dproj</Transaction>
+    <Transaction>2021/08/02 13:46:26.000.473,=C:\dev\ProjetoRelatoriosUnivates\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 13:46:46.000.552,C:\dev\ProjetoRelatoriosUnivates\Unit1.pas=C:\dev\ProjetoRelatoriosUnivates\model\uRamais.pas</Transaction>
+    <Transaction>2021/08/02 13:46:56.000.034,=C:\dev\ProjetoRelatoriosUnivates\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 13:47:11.000.812,C:\dev\ProjetoRelatoriosUnivates\Unit1.pas=C:\dev\ProjetoRelatoriosUnivates\controller\uRamaisController.pas</Transaction>
+    <Transaction>2021/08/02 13:50:52.000.774,=C:\dev\ProjetoRelatoriosUnivates\Unit2.pas</Transaction>
+    <Transaction>2021/08/02 13:51:35.000.776,C:\dev\ProjetoRelatoriosUnivates\Unit2.dfm=C:\dev\ProjetoRelatoriosUnivates\view\uFormReport.dfm</Transaction>
+    <Transaction>2021/08/02 13:51:35.000.776,C:\dev\ProjetoRelatoriosUnivates\Unit2.pas=C:\dev\ProjetoRelatoriosUnivates\view\uFormReport.pas</Transaction>
+    <Transaction>2021/08/02 13:51:45.000.221,=C:\dev\ProjetoRelatoriosUnivates\Unit3.pas</Transaction>
+    <Transaction>2021/08/02 13:52:02.000.145,C:\dev\ProjetoRelatoriosUnivates\Unit3.dfm=C:\dev\ProjetoRelatoriosUnivates\uFormDados.dfm</Transaction>
+    <Transaction>2021/08/02 13:52:02.000.145,C:\dev\ProjetoRelatoriosUnivates\Unit3.pas=C:\dev\ProjetoRelatoriosUnivates\uFormDados.pas</Transaction>
+    <Transaction>2021/08/02 13:53:08.000.387,C:\dev\ProjetoRelatoriosUnivates\uFormDados.pas=</Transaction>
+    <Transaction>2021/08/02 13:53:15.000.589,=C:\dev\ProjetoRelatoriosUnivates\Unit3.pas</Transaction>
+    <Transaction>2021/08/02 13:53:30.000.036,C:\dev\ProjetoRelatoriosUnivates\Unit3.pas=C:\dev\ProjetoRelatoriosUnivates\view\uFormDados.pas</Transaction>
+    <Transaction>2021/08/02 13:53:30.000.036,C:\dev\ProjetoRelatoriosUnivates\Unit3.dfm=C:\dev\ProjetoRelatoriosUnivates\view\uFormDados.dfm</Transaction>
+    <Transaction>2021/08/02 14:30:48.046,=C:\dev\ProjetoRelatoriosUnivates\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 14:31:53.152,C:\dev\ProjetoRelatoriosUnivates\Data\udatamodel.dfm=C:\dev\ProjetoRelatoriosUnivates\Unit1.dfm</Transaction>
+    <Transaction>2021/08/02 14:31:53.152,C:\dev\ProjetoRelatoriosUnivates\Data\udatamodel.pas=C:\dev\ProjetoRelatoriosUnivates\Unit1.pas</Transaction>
+    <Transaction>2021/08/02 14:32:51.328,C:\dev\ProjetoRelatoriosUnivates\Data\UdmReport.pas=C:\dev\ProjetoRelatoriosUnivates\Data\udatamodel.pas</Transaction>
+    <Transaction>2021/08/02 14:32:51.328,C:\dev\ProjetoRelatoriosUnivates\Data\UdmReport.dfm=C:\dev\ProjetoRelatoriosUnivates\Data\udatamodel.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="controller"/>
+    <File Path="controller\uRamaisController.pas"/>
+    <File Path="model"/>
+    <File Path="model\uRamais.pas"/>
+    <File Path="view"/>
+    <File Path="view\uFormDados.pas"/>
+    <File Path="view\uFormDados.dfm"/>
+    <File Path="view\uformprincipal.pas"/>
+    <File Path="view\uformprincipal.dfm"/>
+    <File Path="view\uFormReport.pas"/>
+    <File Path="view\uFormReport.dfm"/>
+    <File Path="Data"/>
+    <File Path="Data\UdmReport.pas"/>
+    <File Path="Data\UdmReport.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

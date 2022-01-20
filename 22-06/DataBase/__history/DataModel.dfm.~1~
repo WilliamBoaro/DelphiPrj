@@ -1,0 +1,5 @@
+object dbConnection: TdbConnection
+  OldCreateOrder = False
+  Height = 473
+  Width = 937
+end

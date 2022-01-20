@@ -1,0 +1,93 @@
+unit UgeneroFilme;
+
+
+
+interface
+
+uses
+ udatamodel, FireDAC.Comp.Client, Uconnection, System.SysUtils;
+
+type
+  TgeneroFilme = class
+  private
+    Fgenero : string;
+    Fid     : integer;
+    fcon    : Tconnection;
+    procedure Setgenero(const Value: string);
+    procedure Setid(const Value: integer);
+    procedure setcon(const Value: tconnection);
+  public
+    Constructor Create;
+    Destructor Destroy; override;
+    property id     : integer read Fid write Setid;
+    property genero : string read Fgenero write Setgenero;
+    property con    : tconnection read Fcon write Setcon;
+
+    function save   : boolean;
+    function delete : boolean;
+    function update : boolean;
+
+end;
+
+
+implementation
+
+{ TgeneroFilme }
+
+constructor TgeneroFilme.Create;
+begin
+  fcon    := Tconnection.create;
+  inherited;
+end;
+
+function TgeneroFilme.delete: boolean;
+var
+  sql : string;
+begin
+
+
+end;
+
+destructor TgeneroFilme.Destroy;
+begin
+  inherited;
+end;
+
+function TgeneroFilme.save: boolean;
+var
+  sql : string;
+begin
+  fcon.qry.close;
+  fcon.qry.sql.clear;
+
+  sql := 'Insert into generoFilme' + '(id, genero)' +
+        'values ( ' + fid.toString  + ',' +
+                      QuotedStr(genero) + ')';
+  if fcon.qry.rowaffected then
+  begin
+
+  end;
+
+end;
+
+procedure TgeneroFilme.setcon(const Value: tconnection);
+begin
+  Fcon := Value;
+end;
+
+procedure TgeneroFilme.Setgenero(const Value: string);
+begin
+  Fgenero := Value;
+end;
+
+procedure TgeneroFilme.Setid(const Value: integer);
+begin
+  Fid     := Value;
+end;
+
+function TgeneroFilme.update: boolean;
+begin
+
+end;
+
+end.

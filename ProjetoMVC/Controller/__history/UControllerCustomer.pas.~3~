@@ -1,0 +1,44 @@
+unit UControllerCustomer;
+
+interface
+
+uses
+  UCustomer, FireDAC.Comp.Client,dataModel, System.SysUtils;
+type
+  TcontrollerCustomer = class
+  private
+    FQry : TFDQuery;
+  public
+    constructor Create;
+    destructor  Destroy; override;
+
+    procedure Save(const obCustomer: TCustomer);
+  end;
+
+implementation
+
+
+{ ControllerCustomer }
+
+constructor tControllerCustomer.Create;
+begin
+  inherited;
+  FQry := TFDQuery.Create(nil);
+  FQry.Connection := dataModel.dmSales.FDConnectionSales;
+end;
+
+destructor TControllerCustomer.Destroy;
+begin
+  FreeAndNil(FQry);
+  inherited;
+end;
+
+procedure tControllerCustomer.Save(const obCustomer: TCustomer);
+begin
+  if True then
+
+obCustomer.Save(obCustomer);
+
+end;
+
+end.

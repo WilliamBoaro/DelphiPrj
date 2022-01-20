@@ -1,0 +1,20 @@
+program prjReport;
+
+uses
+  Vcl.Forms,
+  uformprincipal in 'view\uformprincipal.pas' {frmPrincipal},
+  uRamais in 'model\uRamais.pas',
+  uRamaisController in 'controller\uRamaisController.pas',
+  uFormReport in 'view\uFormReport.pas' {Form2},
+  uFormDados in 'view\uFormDados.pas' {formDados};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TformDados, formDados);
+  Application.Run;
+end.

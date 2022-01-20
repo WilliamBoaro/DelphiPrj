@@ -1,0 +1,25 @@
+unit DataModel;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TdbConnection = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dbConnection: TdbConnection;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

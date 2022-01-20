@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EF14059B-CB0B-4106-B8E6-B4BBFBE765D3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SalesProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\willi\OneDrive\Área de Trabalho\ProjetoUnivates\Projeto\ProjectUnivates.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SalesProject">
+        <MSBuild Projects="SalesProject.dproj"/>
+    </Target>
+    <Target Name="SalesProject:Clean">
+        <MSBuild Projects="SalesProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SalesProject:Make">
+        <MSBuild Projects="SalesProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjectUnivates">
+        <MSBuild Projects="C:\Users\willi\OneDrive\Área de Trabalho\ProjetoUnivates\Projeto\ProjectUnivates.dproj"/>
+    </Target>
+    <Target Name="ProjectUnivates:Clean">
+        <MSBuild Projects="C:\Users\willi\OneDrive\Área de Trabalho\ProjetoUnivates\Projeto\ProjectUnivates.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectUnivates:Make">
+        <MSBuild Projects="C:\Users\willi\OneDrive\Área de Trabalho\ProjetoUnivates\Projeto\ProjectUnivates.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SalesProject;ProjectUnivates"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SalesProject:Clean;ProjectUnivates:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SalesProject:Make;ProjectUnivates:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

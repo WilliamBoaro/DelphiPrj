@@ -1,0 +1,5 @@
+object dmConstrollerCustomer: TdmConstrollerCustomer
+  OldCreateOrder = False
+  Height = 261
+  Width = 414
+end

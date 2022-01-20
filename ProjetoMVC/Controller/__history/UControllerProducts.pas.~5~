@@ -1,0 +1,16 @@
+unit UControllerProducts;
+
+interface
+
+uses
+  Uproducts;
+type
+  TControllerProduct = class
+  public
+  Procedure Save(const ObProduct : Tproducts);
+
+    end;
+
+implementation
+
+end.

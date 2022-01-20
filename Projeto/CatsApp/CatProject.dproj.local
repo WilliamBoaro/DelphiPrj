@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/16 09:23:44.000.141,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 09:41:36.000.892,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\EstudoCUSRO.fmx</Transaction>
+    <Transaction>2021/06/16 09:41:36.000.892,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\EstudoCUSRO.pas</Transaction>
+    <Transaction>2021/06/16 09:41:38.000.677,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/06/16 09:41:39.022,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 09:46:28.044,C:\dev\Projeto\CatsApp\Unit1.fmx=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2021/06/16 09:46:28.044,C:\dev\Projeto\CatsApp\Unit1.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 09:46:30.574,C:\dev\Projeto\CatsApp\Project1.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/06/16 09:47:24.975,C:\dev\Projeto\CatsApp\CatProject.dproj=C:\dev\Projeto\CatsApp\Project1.dproj</Transaction>
+    <Transaction>2021/06/16 09:47:43.765,C:\dev\Projeto\CatsApp\UnitCat.fmx=C:\dev\Projeto\CatsApp\Unit1.fmx</Transaction>
+    <Transaction>2021/06/16 09:47:43.765,C:\dev\Projeto\CatsApp\UnitCat.pas=C:\dev\Projeto\CatsApp\Unit1.pas</Transaction>
+    <Transaction>2021/06/16 09:57:51.711,=C:\dev\Projeto\CatsApp\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

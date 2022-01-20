@@ -1,0 +1,49 @@
+unit uMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uCustomer, Vcl.Menus, uProducts,uOrder ;
+
+type
+  TfMain = class(TForm)
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    Cutomer1: TMenuItem;
+    Cutomer2: TMenuItem;
+    Products1: TMenuItem;
+    procedure Cutomer2Click(Sender: TObject);
+    procedure Cutomer1Click(Sender: TObject);
+    procedure Products1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fMain: TfMain;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TfMain.Cutomer1Click(Sender: TObject);
+begin
+  fCustomer.ShowModal;
+end;
+
+procedure TfMain.Cutomer2Click(Sender: TObject);
+begin
+  fOrder.ShowModal;
+end;
+
+procedure TfMain.Products1Click(Sender: TObject);
+begin
+  fProducts.ShowModal;
+end;
+
+end.

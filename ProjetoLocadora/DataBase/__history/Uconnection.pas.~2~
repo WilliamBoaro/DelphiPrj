@@ -1,0 +1,33 @@
+unit Uconnection;
+
+interface
+
+uses
+  FireDAC.Comp.Client, UdataModel;
+type
+  Tconnection = class
+    public
+    qry : TFDQuery;
+    con : TdmLocadora;
+    Constructor create;
+    Destructor  destroy ; override;
+  end;
+
+implementation
+
+{ Tconnection }
+
+constructor Tconnection.create;
+begin
+    qry := TFDQuery.Create(nil);
+    con := TdmLocadora(nil);
+end;
+
+destructor Tconnection.destroy;
+begin
+   qry.free;
+   con.Free;
+  inherited;
+end;
+
+end.

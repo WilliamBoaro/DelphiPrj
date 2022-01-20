@@ -1,0 +1,48 @@
+unit Uconnection;
+
+interface
+
+uses
+  FireDAC.Comp.Client, UdataModel;
+type
+  Tconnection = class
+  private
+    Fqry: TFDQuery;
+    Fcon: TdmLocadora;
+    procedure Setcon(const Value: TdmLocadora);
+    procedure Setqry(const Value: TFDQuery);
+    public
+    property  qry : TFDQuery read Fqry write Setqry;
+    property con : TdmLocadora read Fcon write Setcon;
+    Constructor create;
+    Destructor  destroy ; override;
+  end;
+
+implementation
+
+{ Tconnection }
+
+constructor Tconnection.create;
+begin
+    qry := TFDQuery.Create(nil);
+    con := TdmLocadora(nil);
+end;
+
+destructor Tconnection.destroy;
+begin
+   qry.free;
+   con.Free;
+  inherited;
+end;
+
+procedure Tconnection.Setcon(const Value: TdmLocadora);
+begin
+  Fcon := Value;
+end;
+
+procedure Tconnection.Setqry(const Value: TFDQuery);
+begin
+  Fqry := Value;
+end;
+
+end.

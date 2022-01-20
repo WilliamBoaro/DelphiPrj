@@ -1,0 +1,158 @@
+unit Customer;
+
+interface
+
+uses
+  FireDAC.Comp.Client, DataModel, Products;
+
+type
+  Tcustomer = class
+
+  private
+    FQry: TFDQuery;
+    FName: string;
+    FEmail: string;
+    FID: integer;
+    FCity: string;
+    FAddress: string;
+    procedure SetAddress(const Value: string);
+    procedure SetCity(const Value: string);
+    procedure SetEmail(const Value: string);
+    procedure SetID(const Value: integer);
+    procedure SetName(const Value: string);
+
+    function CheckRecordExist(const AID: Integer): Boolean;
+  public
+    constructor Create;
+    destructor  Destroy; override;
+
+    property ID: integer read FID write SetID;
+    property Name: string read FName write SetName;
+    property Address: string read FAddress write SetAddress;
+    property City:  string read FCity write SetCity;
+    property Email: string read FEmail write SetEmail;
+
+    function Save: Boolean;
+    function Delete: Boolean;
+    procedure FetchRecordByID;
+
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{ Tcustomer }
+
+function Tcustomer.CheckRecordExist(const AID: Integer): Boolean;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+  FQry.SQL.Add('Select ID From Customers where ID = ' + AID.ToString);
+  FQry.Open;
+  Result := FQry.FieldByName('ID').AsInteger > 0;
+end;
+
+constructor Tcustomer.Create;
+begin
+  inherited;
+  FQry := TFDQuery.Create(nil);
+  FQry.Connection := dmDados.FDConnection1;
+end;
+
+function Tcustomer.Delete: Boolean;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+  FQry.SQL.Add('DELETE FROM Customers WHERE ID = ' + FID.ToString);
+  FQry.ExecSQL;
+  Result := FQry.RowsAffected > 0;
+end;
+
+destructor Tcustomer.Destroy;
+begin
+  FreeAndNil(FQry);
+  inherited;
+end;
+
+procedure Tcustomer.FetchRecordByID;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+  FQry.SQL.Add('Select * From Customers where ID = ' + FID.ToString);
+  FQry.Open;
+
+  if FQry.RecordCount > 0 then
+  begin
+    FName    := FQry.FieldByName('Name').AsString;
+    FAddress := FQry.FieldByName('Address').AsString;
+    FCity    := FQry.FieldByName('City').AsString;
+    FEmail   := FQry.FieldByName('Email').AsString;
+  end;
+end;
+
+function Tcustomer.Save: Boolean;
+var
+  SQL : String;
+begin
+  if CheckRecordExist(FID) then
+  begin
+    FQry.Close;
+    FQry.SQL.Clear;
+
+    SQL := ' UPDATE Customers ' +
+           '    SET ID      = ' + FID.ToString        + ',' +
+           '        Name    = ' + QuotedStr(FName)    + ',' +
+           '        Address = ' + QuotedStr(FAddress) + ',' +
+           '        City    = ' + QuotedStr(FCity)    + ',' +
+           '        Email   = ' + QuotedStr(FEmail)   +
+           '  WHERE ID = ' + FID.ToString;
+    FQry.SQL.Add(SQL);
+  end
+  else
+  begin
+    FQry.Close;
+    FQry.SQL.Clear;
+
+    SQL := 'Insert into Customers' +
+           ' (ID, Name, Address, City, Email)' +
+           ' Values ( ' + FID.ToString        + ',' +
+                          QuotedStr(FName)    + ',' +
+                          QuotedStr(FAddress) + ',' +
+                          QuotedStr(FCity)    + ',' +
+                          QuotedStr(FEmail)   + ')';
+    FQry.SQL.Add(SQL);
+  end;
+
+  FQry.ExecSQL;
+
+  Result := FQry.RowsAffected > 0;
+end;
+
+procedure Tcustomer.SetAddress(const Value: string);
+begin
+  FAddress := Value;
+end;
+
+procedure Tcustomer.SetCity(const Value: string);
+begin
+  FCity := Value;
+end;
+
+procedure Tcustomer.SetEmail(const Value: string);
+begin
+  FEmail := Value;
+end;
+
+procedure Tcustomer.SetID(const Value: integer);
+begin
+  FID := Value;
+end;
+
+procedure Tcustomer.SetName(const Value: string);
+begin
+  FName := Value;
+end;
+
+end.

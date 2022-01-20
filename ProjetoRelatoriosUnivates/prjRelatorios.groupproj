@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5C13AA49-6AC9-4C31-9A5E-111DE45968E9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjReport.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ProjetoMVC\ProjectMVC.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjReport">
+        <MSBuild Projects="prjReport.dproj"/>
+    </Target>
+    <Target Name="prjReport:Clean">
+        <MSBuild Projects="prjReport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjReport:Make">
+        <MSBuild Projects="prjReport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjectMVC">
+        <MSBuild Projects="..\ProjetoMVC\ProjectMVC.dproj"/>
+    </Target>
+    <Target Name="ProjectMVC:Clean">
+        <MSBuild Projects="..\ProjetoMVC\ProjectMVC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectMVC:Make">
+        <MSBuild Projects="..\ProjetoMVC\ProjectMVC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjReport;ProjectMVC"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjReport:Clean;ProjectMVC:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjReport:Make;ProjectMVC:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

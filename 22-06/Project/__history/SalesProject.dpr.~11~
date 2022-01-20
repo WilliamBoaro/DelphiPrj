@@ -1,0 +1,27 @@
+program SalesProject;
+
+uses
+  Vcl.Forms,
+  uMain in '..\Form\uMain.pas' {fMain},
+  uCustomer in 'uCustomer.pas' {fCustomer},
+  uProducts in 'uProducts.pas' {fProducts},
+  Customer in '..\Customer.pas',
+  Products in '..\Form\Products.pas',
+  Order in '..\Form\Order.pas',
+  DataModel in '..\DataBase\DataModel.pas' {dmDados: TDataModule},
+  Orders in '..\Form\Orders.pas' {Form1},
+  PesqusaCustomer in '..\Form\PesqusaCustomer.pas' {Form2},
+  frmPesquisaProdutcs in 'frmPesquisaProdutcs.pas' {frmProdutos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TdmDados, dmDados);
+  Application.CreateForm(TfMain, fMain);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TfrmProdutos, frmProdutos);
+  Application.Run;
+end.

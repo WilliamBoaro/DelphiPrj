@@ -1,0 +1,70 @@
+unit UcadastroCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.Variants, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.StdCtrls, Vcl.Mask, Vcl.ComCtrls, Uclientes, System.Classes;
+
+type
+  TfrmCadastroCliente = class(TForm)
+    pnlBack: TPanel;
+    pnlTop: TPanel;
+    Label1: TLabel;
+    btnSair: TSpeedButton;
+    edtId: TEdit;
+    lblId: TLabel;
+    lblNome: TLabel;
+    edtNome: TEdit;
+    edtDate: TDateTimePicker;
+    lblData: TLabel;
+    edtTelefone: TMaskEdit;
+    edtEmail: TEdit;
+    lblTelefone: TLabel;
+    Label2: TLabel;
+    btnSalvar: TButton;
+    procedure btnSairClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+  private
+    Fcliente : Tclientes;
+  public
+    Constructor Create;
+    Destructor Destroy; override;
+  end;
+
+var
+  frmCadastroCliente: TfrmCadastroCliente;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{$R *.dfm}
+
+procedure TfrmCadastroCliente.btnSairClick(Sender: TObject);
+begin
+  close();
+end;
+
+procedure TfrmCadastroCliente.btnSalvarClick(Sender: TObject);
+begin
+   Fcliente.id   := strToInt(edtId.Text);
+   Fcliente.name := edtNome.Text;
+   fcliente.dataNascimento := edtDate.Date;
+
+end;
+
+constructor TfrmCadastroCliente.Create;
+begin
+  Fcliente := Tclientes.Create;
+end;
+
+destructor TfrmCadastroCliente.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

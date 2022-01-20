@@ -1,0 +1,55 @@
+unit Ulocacoes;
+
+interface
+type
+  Tlocacoes = class
+  private
+    FcodCliente    : integer;
+    Fid            : integer;
+    FdataDevolucao : date;
+    FdataRetirada  : date;
+    FcodFilme      : integer;
+    procedure SetcodCliente(const Value: integer);
+    procedure SetcodFilme(const Value: integer);
+    procedure SetdataDevolucao(const Value: date);
+    procedure SetdataRetirada(const Value: date);
+    procedure Setid(const Value: integer);
+  public
+  property id : integer read Fid write Setid;
+  property codCliente    : integer read FcodCliente write SetcodCliente;
+  property codFilme      : integer read FcodFilme write SetcodFilme;
+  property dataRetirada  : date read FdataRetirada write SetdataRetirada;
+  property dataDevolucao : date read FdataDevolucao write SetdataDevolucao;
+
+  end;
+
+implementation
+
+{ Tlocacoes }
+
+procedure Tlocacoes.SetcodCliente(const Value: integer);
+begin
+  FcodCliente    := Value;
+end;
+
+procedure Tlocacoes.SetcodFilme(const Value: integer);
+begin
+  FcodFilme      := Value;
+end;
+
+procedure Tlocacoes.SetdataDevolucao(const Value: date);
+begin
+  FdataDevolucao := Value;
+end;
+
+procedure Tlocacoes.SetdataRetirada(const Value: date);
+begin
+  FdataRetirada  := Value;
+end;
+
+procedure Tlocacoes.Setid(const Value: integer);
+begin
+  Fid            := Value;
+end;
+
+end.

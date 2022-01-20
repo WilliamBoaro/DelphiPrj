@@ -1,0 +1,21 @@
+program ProjectMVC;
+
+uses
+  Vcl.Forms,
+  Umain in 'View\Umain.pas' {frmMain},
+  UCustomer in 'Model\UCustomer.pas',
+  dataModel in 'Model\DataBase\dataModel.pas' {dmSales: TDataModule},
+  frmNewCustomer in 'View\frmNewCustomer.pas' {tfmNewCustomer},
+  UControllerCustomer in 'Controller\UControllerCustomer.pas',
+  uDAOCustomer in 'Controller\uDAOCustomer.pas';
+
+{$R *.res}
+
+begin
+  //ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TdmSales, dmSales);
+  Application.Run;
+end.

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/22 13:04:07.000.635,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/22 13:23:43.000.858,C:\dev\22-06\Form\uMain.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/06/22 13:23:43.000.858,C:\dev\22-06\Form\uMain.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/06/22 13:24:22.000.042,C:\dev\22-06\Project\SalesProject.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2021/06/22 13:24:34.000.030,=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/06/22 13:24:39.000.394,=C:\dev\22-06\Project\Unit3.pas</Transaction>
+    <Transaction>2021/06/22 13:25:03.000.862,=C:\dev\22-06\Project\Unit4.pas</Transaction>
+    <Transaction>2021/06/22 13:25:17.000.980,C:\dev\22-06\Project\uCustomer.pas=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/06/22 13:25:17.000.980,C:\dev\22-06\Project\uCustomer.dfm=C:\dev\22-06\Project\Unit2.dfm</Transaction>
+    <Transaction>2021/06/22 13:25:30.000.342,C:\dev\22-06\Project\uOrder.dfm=C:\dev\22-06\Project\Unit4.dfm</Transaction>
+    <Transaction>2021/06/22 13:25:30.000.342,C:\dev\22-06\Project\uOrder.pas=C:\dev\22-06\Project\Unit4.pas</Transaction>
+    <Transaction>2021/06/22 13:25:50.000.523,C:\dev\22-06\Project\uProducts.pas=C:\dev\22-06\Project\Unit3.pas</Transaction>
+    <Transaction>2021/06/22 13:25:50.000.523,C:\dev\22-06\Project\uProducts.dfm=C:\dev\22-06\Project\Unit3.dfm</Transaction>
+    <Transaction>2021/06/22 13:28:52.000.453,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/06/22 13:28:56.000.547,=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/06/22 13:29:03.000.442,=C:\dev\22-06\Project\Unit3.pas</Transaction>
+    <Transaction>2021/06/22 13:30:25.000.387,C:\dev\22-06\Customer.pas=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/06/22 13:30:41.000.372,C:\dev\22-06\Form\Order.pas=C:\dev\22-06\Project\Unit3.pas</Transaction>
+    <Transaction>2021/06/22 13:31:01.000.371,C:\dev\22-06\Form\Products.pas=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/06/22 14:04:10.000.185,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/06/22 14:05:29.000.673,C:\dev\22-06\Project\Unit1.dfm=C:\dev\22-06\DataBase\DataModel.dfm</Transaction>
+    <Transaction>2021/06/22 14:05:29.000.673,C:\dev\22-06\Project\Unit1.pas=C:\dev\22-06\DataBase\DataModel.pas</Transaction>
+    <Transaction>2021/06/25 14:35:06.000.511,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/06/25 14:35:28.000.265,C:\dev\22-06\Project\Unit1.dfm=C:\dev\22-06\Project\UorderDetails.dfm</Transaction>
+    <Transaction>2021/06/25 14:35:28.000.265,C:\dev\22-06\Project\Unit1.pas=C:\dev\22-06\Project\UorderDetails.pas</Transaction>
+    <Transaction>2021/07/06 12:49:02.000.680,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/07/06 12:50:01.000.135,C:\dev\22-06\Form\Orders.dfm=C:\dev\22-06\Project\Unit1.dfm</Transaction>
+    <Transaction>2021/07/06 12:50:01.000.135,C:\dev\22-06\Form\Orders.pas=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/07/06 13:11:47.000.938,=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/07/06 13:19:56.000.015,C:\dev\22-06\Form\PesqusaCustomer.pas=C:\dev\22-06\Project\Unit2.pas</Transaction>
+    <Transaction>2021/07/06 13:19:56.000.015,C:\dev\22-06\Form\PesqusaCustomer.dfm=C:\dev\22-06\Project\Unit2.dfm</Transaction>
+    <Transaction>2021/07/07 14:34:29.000.853,=C:\dev\22-06\Project\Unit3.pas</Transaction>
+    <Transaction>2021/07/07 14:40:00.000.280,C:\dev\22-06\Project\Unit3.pas=C:\dev\22-06\Project\frmPesquisaProdutcs.pas</Transaction>
+    <Transaction>2021/07/07 14:40:00.000.280,C:\dev\22-06\Project\Unit3.dfm=C:\dev\22-06\Project\frmPesquisaProdutcs.dfm</Transaction>
+    <Transaction>2021/07/08 13:10:39.000.571,C:\dev\22-06\Project\UorderDetails.pas=</Transaction>
+    <Transaction>2021/07/08 13:10:44.000.627,C:\dev\22-06\Project\uOrder.pas=</Transaction>
+    <Transaction>2021/07/12 14:40:21.000.749,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/07/12 15:20:47.000.245,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/08/16 13:58:16.000.728,=C:\dev\22-06\Project\Unit1.pas</Transaction>
+    <Transaction>2021/08/16 13:58:37.000.269,C:\dev\22-06\Project\Ulocacoes.pas=C:\dev\22-06\Project\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\22-06"/>
+    <File Path="..\DataBase"/>
+    <File Path="..\DataBase\DataModel.pas"/>
+    <File Path="..\DataBase\DataModel.dfm"/>
+    <File Path="..\Form"/>
+    <File Path="..\Form\Order.pas"/>
+    <File Path="..\Form\Orders.pas"/>
+    <File Path="..\Form\Orders.dfm"/>
+    <File Path="..\Form\PesqusaCustomer.pas"/>
+    <File Path="..\Form\PesqusaCustomer.dfm"/>
+    <File Path="..\Form\Products.pas"/>
+    <File Path="..\Form\uMain.pas"/>
+    <File Path="..\Form\uMain.dfm"/>
+    <File Path="..\Customer.pas"/>
+    <File Path="uCustomer.pas"/>
+    <File Path="uCustomer.dfm"/>
+    <File Path="uProducts.pas"/>
+    <File Path="uProducts.dfm"/>
+    <File Path="frmPesquisaProdutcs.pas"/>
+    <File Path="frmPesquisaProdutcs.dfm"/>
+    <File Path="Ulocacoes.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

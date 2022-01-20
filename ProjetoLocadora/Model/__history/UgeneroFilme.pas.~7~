@@ -1,0 +1,73 @@
+unit UgeneroFilme;
+
+
+
+interface
+
+uses
+ udatamodel, FireDAC.Comp.Client;
+
+type
+  TgeneroFilme = class
+  private
+    Fgenero : string;
+    Fid     : integer;
+    procedure Setgenero(const Value: string);
+    procedure Setid(const Value: integer);
+  public
+    Constructor Create;
+    Destructor Destroy; override;
+    property id     : integer read Fid write Setid;
+    property genero : string read Fgenero write Setgenero;
+
+    function save   : boolean;
+    function delete : boolean;
+    function update : boolean;
+
+end;
+
+
+implementation
+
+{ TgeneroFilme }
+
+constructor TgeneroFilme.Create;
+begin
+
+end;
+
+function TgeneroFilme.delete: boolean;
+var
+  sql : string;
+begin
+
+
+end;
+
+destructor TgeneroFilme.Destroy;
+begin
+
+  inherited;
+end;
+
+function TgeneroFilme.save: boolean;
+begin
+
+end;
+
+procedure TgeneroFilme.Setgenero(const Value: string);
+begin
+  Fgenero := Value;
+end;
+
+procedure TgeneroFilme.Setid(const Value: integer);
+begin
+  Fid     := Value;
+end;
+
+function TgeneroFilme.update: boolean;
+begin
+
+end;
+
+end.

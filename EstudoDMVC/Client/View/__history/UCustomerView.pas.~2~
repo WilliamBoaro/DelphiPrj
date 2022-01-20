@@ -1,0 +1,32 @@
+unit UCustomerView;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmViewCustomer = class(TForm)
+    btnGetAll: TButton;
+    memJSON: TMemo;
+    procedure btnGetAllClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmViewCustomer: TfrmViewCustomer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmViewCustomer.btnGetAllClick(Sender: TObject);
+begin
+    //
+end;
+
+end.

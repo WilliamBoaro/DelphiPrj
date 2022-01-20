@@ -1,0 +1,73 @@
+unit PesqusaCustomer;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls, DataModel, Customer;
+
+type
+  TForm2 = class(TForm)
+    Panel1: TPanel;
+    jghf: TPanel;
+    DBGrid1: TDBGrid;
+    edtValor: TEdit;
+    DataSource1: TDataSource;
+    lbl: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure edtValorChange(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
+  private
+    FCustomer: Tcustomer;
+    procedure SetCustomer(const Value: Tcustomer);
+
+  public
+    property Customer: Tcustomer read FCustomer write SetCustomer;
+  end;
+
+var
+  Form2: TForm2;
+
+
+implementation
+
+{$R *.dfm}
+
+uses
+  Orders;
+
+procedure TForm2.DBGrid1DblClick(Sender: TObject);
+begin
+  Form1.edtCustomer.Text     := DBGrid1.Fields[0].Value;
+  Form1.edtFindCustomer.Text := DBGrid1.Fields[1].value;
+  Close;
+end;
+
+procedure TForm2.edtValorChange(Sender: TObject);
+begin
+  edtValor.SetFocus;
+  if trim(edtValor.Text) <> EmptyStr then
+  begin
+    DataSource1.DataSet.Filtered := false;
+    DataSource1.DataSet.Filter   := 'Name like  ' + quotedStr('%' + trim(edtValor.Text) + '%');
+    DataSource1.DataSet.Filtered := True;
+  end;
+    DataSource1.DataSet.Filtered := False;
+
+
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  FCustomer :=  Tcustomer.Create;
+  DataSource1.DataSet := FCustomer.MemTbl;
+
+end;
+
+procedure TForm2.SetCustomer(const Value: Tcustomer);
+begin
+  FCustomer := Value;
+end;
+
+end.

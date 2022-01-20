@@ -1,0 +1,69 @@
+object frmProdutos: TfrmProdutos
+  Left = 0
+  Top = 0
+  Caption = 'Procura Produto'
+  ClientHeight = 338
+  ClientWidth = 736
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 736
+    Height = 49
+    Align = alTop
+    TabOrder = 0
+    ExplicitTop = -6
+    object edtSearchProduct: TLabeledEdit
+      Left = 440
+      Top = 124
+      Width = 121
+      Height = 21
+      EditLabel.Width = 61
+      EditLabel.Height = 13
+      EditLabel.Caption = 'LabeledEdit1'
+      TabOrder = 0
+    end
+    object edtProcura: TLabeledEdit
+      Left = 8
+      Top = 22
+      Width = 697
+      Height = 21
+      EditLabel.Width = 121
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Informe o valor desejado'
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 49
+    Width = 736
+    Height = 289
+    Align = alClient
+    TabOrder = 1
+    ExplicitLeft = 248
+    ExplicitTop = 200
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 0
+      Width = 736
+      Height = 289
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+  end
+end

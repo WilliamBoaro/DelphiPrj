@@ -1,0 +1,30 @@
+unit Udiarias;
+
+interface
+type
+  Tdiarias = class
+  private
+    Fvalor : double;
+    Fid    : integer;
+    procedure Setid(const Value: integer);
+    procedure Setvalor(const Value: double);
+  public
+    property id    : integer read Fid write Setid;
+    property valor : double read Fvalor write Setvalor;
+  end;
+
+implementation
+
+{ Tdiarias }
+
+procedure Tdiarias.Setid(const Value: integer);
+begin
+  Fid    := Value;
+end;
+
+procedure Tdiarias.Setvalor(const Value: double);
+begin
+  Fvalor := Value;
+end;
+
+end.

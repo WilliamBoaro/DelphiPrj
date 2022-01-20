@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/07/10 10:33:41.585,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/10 10:39:32.745,C:\dev\Curso do Tulio\ClientVCL\src\view\main.pas=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/10 10:39:32.745,C:\dev\Curso do Tulio\ClientVCL\src\view\main.dfm=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/07/10 10:40:03.768,C:\dev\Curso do Tulio\ClientVCL\src\CursoTulio.dproj=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2021/07/10 10:56:07.157,=C:\dev\Curso do Tulio\ClientVCL\src\Unit1.pas</Transaction>
+    <Transaction>2021/07/10 10:57:01.944,C:\dev\Curso do Tulio\ClientVCL\src\view\styles\Colors.pas=C:\dev\Curso do Tulio\ClientVCL\src\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

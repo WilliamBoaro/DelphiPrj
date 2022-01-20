@@ -1,0 +1,128 @@
+unit Customer;
+
+interface
+
+uses
+  FireDAC.Comp.Client, DataModel;
+
+type
+  Tcustomer = class
+
+  private
+    FQry: TFDQuery;
+    FName: string;
+    FEmail: string;
+    FID: integer;
+    FCity: string;
+    FAddress: string;
+    procedure SetAddress(const Value: string);
+    procedure SetCity(const Value: string);
+    procedure SetEmail(const Value: string);
+    procedure SetID(const Value: integer);
+    procedure SetName(const Value: string);
+
+    function CheckRecordExist(const AID: Integer): Boolean;
+  public
+    constructor Create;
+    destructor  Destroy; override;
+
+    property ID: integer read FID write SetID;
+    property Name: string read FName write SetName;
+    property Address: string read FAddress write SetAddress;
+    property City:  string read FCity write SetCity;
+    property Email: string read FEmail write SetEmail;
+
+    function Save: Boolean;
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{ Tcustomer }
+
+function Tcustomer.CheckRecordExist(const AID: Integer): Boolean;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+  FQry.SQL.Add('Select ID From Customers where ID = ' + AID.ToString);
+  FQry.Open;
+  Result := FQry.FieldByName('ID').AsInteger > 0;
+end;
+
+constructor Tcustomer.Create;
+begin
+  inherited;
+  FQry := TFDQuery.Create(nil);
+  FQry.Connection := dmDados.FDConnection1;
+end;
+
+destructor Tcustomer.Destroy;
+begin
+  FreeAndNil(FQry);
+  inherited;
+end;
+
+function Tcustomer.Save: Boolean;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+
+  if CheckRecordExist(FID) then
+  begin
+    FQry.SQL.Add(' UPDATE Customers ' +
+                 '    SET ID      = ' + FID.ToString        + ',' +
+                 '        Name    = ' + QuotedStr(FName)    + ',' +
+                 '        Address = ' + QuotedStr(FAddress) + ',' +
+                 '        City    = ' + QuotedStr(FCity)    + ',' +
+                 '        Email   = ' + QuotedStr(FEmail)   +
+                 '  WHERE ID = ' + FID.ToString
+                 );
+  end
+  else
+  begin
+    FQry.SQL.Add('Insert into Customers' +
+                 ' (ID, Name, Address, City, Email)' +
+                 ' Values ( ' + FID.ToString        + ',' +
+                                QuotedStr(FName)    + ',' +
+                                QuotedStr(FAddress) + ',' +
+                                QuotedStr(FCity)    + ',' +
+                                QuotedStr(FEmail)   + ')'
+                );
+
+               // UPDATE livros SET disponivel=1 WHERE id=19;
+
+  end;
+
+  FQry.ExecSQL;
+
+  Result := FQry.RowsAffected > 0;
+end;
+
+procedure Tcustomer.SetAddress(const Value: string);
+begin
+  FAddress := Value;
+end;
+
+procedure Tcustomer.SetCity(const Value: string);
+begin
+  FCity := Value;
+end;
+
+procedure Tcustomer.SetEmail(const Value: string);
+begin
+  FEmail := Value;
+end;
+
+procedure Tcustomer.SetID(const Value: integer);
+begin
+  FID := Value;
+end;
+
+procedure Tcustomer.SetName(const Value: string);
+begin
+  FName := Value;
+end;
+
+end.

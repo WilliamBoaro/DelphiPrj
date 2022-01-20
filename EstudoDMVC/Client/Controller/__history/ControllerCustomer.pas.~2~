@@ -1,0 +1,53 @@
+unit ControllerCustomer;
+
+interface
+
+uses
+  System.SysUtils, System.Classes,
+  MVCFramework.RESTClient;
+
+type
+  TdmConstrollerCustomer = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    function doGetAll: String;
+    function doGetRestClient: TRESTClient;
+  end;
+
+var
+  dmConstrollerCustomer: TdmConstrollerCustomer;
+
+const
+  HOST = 'localhost';
+  PORT = 8080;
+  ENDPOINT = '/api/customers';
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TdmConstrollerCustomer }
+
+function TdmConstrollerCustomer.doGetAll: String;
+var
+  LRESTClient  : TRESTClient;
+  LRESTReponse : IRESTResponse;
+begin
+  LRESTClient := doGetRestClient;
+  try
+    LRESTReponse  := LRESTClient.doGET(ENDPOINT,[]);
+    Result := LRESTReponse.BodyAsString;
+  finally
+    LRESTClient.Free;
+  end;
+end;
+
+function TdmConstrollerCustomer.doGetRestClient: TRESTClient;
+begin
+  Result := TRESTClient.Create(HOST, PORT);
+end;
+
+end.

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/23 13:44:45.000.000,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/23 13:47:00.000.837,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\dev\EstudoDMVC\Client\View\UCustomerView.dfm</Transaction>
+    <Transaction>2021/07/23 13:47:00.000.837,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\dev\EstudoDMVC\Client\View\UCustomerView.pas</Transaction>
+    <Transaction>2021/07/23 13:47:58.000.140,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj=C:\dev\EstudoDMVC\Client\ClientVCL.dproj</Transaction>
+    <Transaction>2021/07/23 14:08:09.000.184,=C:\dev\EstudoDMVC\Client\Unit1.pas</Transaction>
+    <Transaction>2021/07/23 14:08:49.000.716,C:\dev\EstudoDMVC\Client\Unit1.pas=C:\dev\EstudoDMVC\Client\Controller\ControllerCustomer.pas</Transaction>
+    <Transaction>2021/07/23 14:08:49.000.716,C:\dev\EstudoDMVC\Client\Unit1.dfm=C:\dev\EstudoDMVC\Client\Controller\ControllerCustomer.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

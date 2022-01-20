@@ -1,0 +1,125 @@
+unit Ufilme;
+
+interface
+
+uses
+  FireDAC.Comp.Client, uDataModel;
+type
+  Tfilme = class
+  private
+    FQry       : TFDQuery;
+    Ftitulo    : string;
+    Fqtd       : integer;
+    Fid        : integer;
+    FcodDiaria : integer;
+    FcodGenero : integer;
+    FMemTable  : TFDMemTable;
+    procedure SetcodDiaria(const Value: integer);
+    procedure SetcodGenero(const Value: integer);
+    procedure Setid(const Value: integer);
+    procedure Setqtd(const Value: integer);
+    procedure Settitulo(const Value: string);
+    procedure SetMemTable(const Value: TFDMemTable);
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    property id        : integer read Fid write Setid;
+    property titulo    : string read Ftitulo write Settitulo;
+    property codGenero : integer read FcodGenero write SetcodGenero;
+    property qtd       : integer read Fqtd write Setqtd;
+    property codDiaria : integer read FcodDiaria write SetcodDiaria;
+    property MemTable  : TFDMemTable read FMemTable write SetMemTable;
+
+    procedure gerarTabela;
+
+
+  end;
+
+implementation
+
+uses
+  Data.DB;
+
+{ Tfilme }
+
+constructor Tfilme.Create;
+begin
+  inherited;
+  FQry       := TFDQuery.Create(nil);
+  FMemTable  := TFDMemTable.Create(nil);
+  FQry.Connection := dmLocadora.FDCLocadora;
+  gerarTabela;
+end;
+
+destructor Tfilme.Destroy;
+begin
+  FQry.Free;
+  FMemTable.Free;
+  inherited;
+end;
+
+procedure Tfilme.gerarTabela;
+var
+  sql : string;
+begin
+  FQry.Close;
+  FQry.SQL.Clear;
+  sql := 'SELECT * FROM Filmes';
+  FQry.SQL.Add(sql);
+  FQry.Open;
+
+  FMemTable.Active := false;
+  FMemTable.FieldDefs.Clear;
+  FMemTable.FieldDefs.Add('id',       ftinteger);
+  FMemTable.FieldDefs.Add('nome',      ftstring);
+  FMemTable.FieldDefs.Add('codGenero', ftstring);
+  FMemTable.FieldDefs.Add('qtd',       ftinteger);
+  FMemTable.FieldDefs.Add('codDiaria', ftinteger);
+  FMemTable.Active := true;
+
+  FQry.First;
+  while not FQry.Eof do
+    begin
+      FMemTable.Insert;
+      FMemTable.FieldByName('id').AsString         := FQry.FieldByName('id').AsString;
+      FMemTable.FieldByName('nome').AsString       := FQry.FieldByName('nome').AsString;
+      FMemTable.FieldByName('codGenero').AsString  := FQry.FieldByName('codGenero').AsString;
+      FMemTable.FieldByName('qtd').AsString        := FQry.FieldByName('qtd').AsString;
+      FMemTable.FieldByName('codDiaria').AsString  := FQry.FieldByName('codDiaria').AsString;
+      FMemTable.Post;
+      FMemTable.Next;
+    end;
+end;
+
+procedure Tfilme.SetcodDiaria(const Value: integer);
+begin
+  FcodDiaria := Value;
+end;
+
+procedure Tfilme.SetcodGenero(const Value: integer);
+begin
+  FcodGenero := Value;
+end;
+
+procedure Tfilme.Setid(const Value: integer);
+begin
+  Fid        := Value;
+end;
+
+procedure Tfilme.SetMemTable(const Value: TFDMemTable);
+begin
+  FMemTable := Value;
+end;
+
+procedure Tfilme.Setqtd(const Value: integer);
+begin
+  Fqtd       := Value;
+end;
+
+procedure Tfilme.Settitulo(const Value: string);
+begin
+  Ftitulo    := Value;
+end;
+
+end.

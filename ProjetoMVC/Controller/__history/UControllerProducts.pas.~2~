@@ -1,0 +1,16 @@
+unit UControllerProducts;
+
+interface
+
+uses
+
+type
+  TControllerProduct = class
+  public
+    procedure Save(const obProduct: Tproducts);
+    procedure Delete (const obProduct: Tproducts);
+    end;
+
+implementation
+
+end.

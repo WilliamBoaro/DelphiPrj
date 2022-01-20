@@ -1,0 +1,9 @@
+object dmReport: TdmReport
+  OldCreateOrder = False
+  Height = 496
+  Width = 996
+  object FDConnection1: TFDConnection
+    Left = 72
+    Top = 48
+  end
+end

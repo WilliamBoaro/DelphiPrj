@@ -1,0 +1,27 @@
+unit uDAOCustomer;
+
+interface
+
+uses UCustomer;
+
+type
+  TDAOCustomer = class
+  private
+
+  public
+    procedure Save(const ACustomer: Tcustomer);
+  end;
+
+implementation
+
+{ TDAOCustomer }
+
+procedure TDAOCustomer.Save(const ACustomer: Tcustomer);
+begin
+  QRY...
+  SQL ... com insert into
+
+
+end;
+
+end.

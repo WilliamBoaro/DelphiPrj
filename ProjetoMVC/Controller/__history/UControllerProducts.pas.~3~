@@ -1,0 +1,18 @@
+unit UControllerProducts;
+
+interface
+
+uses
+  Uproducts;
+
+
+type
+  TControllerProduct = class
+  public
+  Procedure Save(ObProduct : Tproduct);
+
+    end;
+
+implementation
+
+end.

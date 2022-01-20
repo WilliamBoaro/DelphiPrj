@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/09/01 14:23:30.000.671,=C:\dev\ProjetoLocadora\Project\Unit2.pas</Transaction>
+    <Transaction>2021/09/01 14:24:38.000.366,C:\dev\ProjetoLocadora\View\UcadastroCliente.pas=</Transaction>
+    <Transaction>2021/09/01 14:25:06.000.421,C:\dev\ProjetoLocadora\View\UcadastroCliente.dfm=C:\dev\ProjetoLocadora\Project\Unit2.dfm</Transaction>
+    <Transaction>2021/09/01 14:25:06.000.421,C:\dev\ProjetoLocadora\View\UcadastroCliente.pas=C:\dev\ProjetoLocadora\Project\Unit2.pas</Transaction>
+    <Transaction>2021/09/01 15:12:17.000.641,=C:\dev\ProjetoLocadora\Project\Unit1.pas</Transaction>
+    <Transaction>2021/09/01 15:14:13.000.238,C:\dev\ProjetoLocadora\View\UbuscaCliente.dfm=C:\dev\ProjetoLocadora\Project\Unit1.dfm</Transaction>
+    <Transaction>2021/09/01 15:14:13.000.238,C:\dev\ProjetoLocadora\View\UbuscaCliente.pas=C:\dev\ProjetoLocadora\Project\Unit1.pas</Transaction>
+    <Transaction>2021/09/01 15:16:31.000.307,=C:\dev\ProjetoLocadora\Project\Unit2.pas</Transaction>
+    <Transaction>2021/09/02 14:15:19.000.255,=C:\dev\ProjetoLocadora\Project\Unit1.pas</Transaction>
+    <Transaction>2021/09/02 14:15:28.000.558,=C:\dev\ProjetoLocadora\Project\Unit2.pas</Transaction>
+    <Transaction>2021/09/02 14:20:10.000.698,C:\dev\ProjetoLocadora\Project\Unit2.dfm=C:\dev\ProjetoLocadora\View\UdeletaCliente.dfm</Transaction>
+    <Transaction>2021/09/02 14:20:10.000.698,C:\dev\ProjetoLocadora\Project\Unit2.pas=C:\dev\ProjetoLocadora\View\UdeletaCliente.pas</Transaction>
+    <Transaction>2021/09/02 15:36:41.000.292,=C:\dev\ProjetoLocadora\Project\Unit2.pas</Transaction>
+    <Transaction>2021/09/02 15:38:09.000.616,C:\dev\ProjetoLocadora\Project\Unit2.dfm=C:\dev\ProjetoLocadora\View\UupdateCliente.dfm</Transaction>
+    <Transaction>2021/09/02 15:38:09.000.616,C:\dev\ProjetoLocadora\Project\Unit2.pas=C:\dev\ProjetoLocadora\View\UupdateCliente.pas</Transaction>
+  </Transactions>
+</BorlandProject>

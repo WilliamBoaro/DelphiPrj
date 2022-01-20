@@ -1,0 +1,35 @@
+unit UconsultaFilmes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.Buttons;
+
+type
+  TfrmConsultaFilme = class(TForm)
+    pnlBack: TPanel;
+    pnlMenu: TPanel;
+    pnlImagem: TPanel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    btnMostrarTodos: TButton;
+    btnVoltar: TSpeedButton;
+    lblFilme: TLabel;
+    lblNome: TLabel;
+    dbGridFilmes: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsultaFilme: TfrmConsultaFilme;
+
+implementation
+
+{$R *.dfm}
+
+end.

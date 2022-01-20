@@ -1,0 +1,35 @@
+unit uOrder;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfOrder = class(TForm)
+    fdas: TPanel;
+    sfsdf: TPanel;
+    edtOrderCustomerID: TLabeledEdit;
+    edtDate: TLabeledEdit;
+    edtOrderId: TLabeledEdit;
+    edtOrderDetailId: TLabeledEdit;
+    edtOrderDetaiQtde: TLabeledEdit;
+    edtOrderDetailPrice: TLabeledEdit;
+    edtOrderDetailsOrderId: TLabeledEdit;
+    Panel1: TPanel;
+    edtOrderDetailProduct: TLabeledEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fOrder: TfOrder;
+
+implementation
+
+{$R *.dfm}
+
+end.

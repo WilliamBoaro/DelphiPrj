@@ -1,0 +1,30 @@
+program ProjectMVC;
+
+uses
+  Vcl.Forms,
+  Umain in 'View\Umain.pas' {frmMain},
+  UCustomer in 'Model\UCustomer.pas',
+  dataModel in 'Model\DataBase\dataModel.pas' {dmSales: TDataModule},
+  frmNewCustomer in 'View\frmNewCustomer.pas' {tfmNewCustomer},
+  UControllerCustomer in 'Controller\UControllerCustomer.pas',
+  uDAOCustomer in 'Controller\uDAOCustomer.pas',
+  frmDeleteCustomer in 'View\frmDeleteCustomer.pas' {tfrmDeleteCustomer},
+  frmSearch in 'frmSearch.pas' {Form1},
+  frmNewProduct in 'frmNewProduct.pas' {TfrmNewProduct},
+  UControllerProducts in 'Controller\UControllerProducts.pas',
+  Uproducts in 'Model\Uproducts.pas',
+  uDAOProducts in 'Controller\uDAOProducts.pas';
+
+{$R *.res}
+
+begin
+  //ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TdmSales, dmSales);
+  Application.CreateForm(TtfrmDeleteCustomer, tfrmDeleteCustomer);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TTfrmNewProduct, TfrmNewProduct);
+  Application.Run;
+end.

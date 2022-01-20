@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/21 13:36:52.000.025,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/21 13:36:55.000.869,=C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/07/21 13:38:18.000.094,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\dev\EstudoDMVC\Server\WebModule.dfm</Transaction>
+    <Transaction>2021/07/21 13:38:18.000.094,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\dev\EstudoDMVC\Server\WebModule.pas</Transaction>
+    <Transaction>2021/07/21 13:38:43.000.217,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\dev\EstudoDMVC\Controller\UControllerCustomer.pas</Transaction>
+    <Transaction>2021/07/21 13:38:54.000.569,C:\Users\willi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj=C:\dev\EstudoDMVC\prjAPI.dproj</Transaction>
+    <Transaction>2021/07/21 13:47:30.000.471,=C:\dev\EstudoDMVC\Unit1.pas</Transaction>
+    <Transaction>2021/07/21 13:47:42.000.997,C:\dev\EstudoDMVC\Unit1.pas=C:\dev\EstudoDMVC\Model\UCustomer.pas</Transaction>
+    <Transaction>2021/07/21 14:35:54.000.576,=C:\dev\EstudoDMVC\Unit1.pas</Transaction>
+    <Transaction>2021/07/21 14:37:26.000.497,C:\dev\EstudoDMVC\Unit1.dfm=C:\dev\EstudoDMVC\DataModule\UDataModule.dfm</Transaction>
+    <Transaction>2021/07/21 14:37:26.000.497,C:\dev\EstudoDMVC\Unit1.pas=C:\dev\EstudoDMVC\DataModule\UDataModule.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Controller"/>
+    <File Path="Controller\UControllerCustomer.pas"/>
+    <File Path="DataModule"/>
+    <File Path="DataModule\UDataModule.pas"/>
+    <File Path="DataModule\UDataModule.dfm"/>
+    <File Path="Model"/>
+    <File Path="Model\UCustomer.pas"/>
+    <File Path="Server"/>
+    <File Path="Server\WebModule.pas"/>
+    <File Path="Server\WebModule.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

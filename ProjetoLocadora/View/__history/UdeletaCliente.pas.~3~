@@ -1,0 +1,49 @@
+unit UdeletaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls, Uclientes;
+
+type
+  TfrmDeletaCliente = class(TForm)
+    pnlBack: TPanel;
+    lblId: TLabel;
+    lblNome: TLabel;
+    pnlTop: TPanel;
+    Label1: TLabel;
+    btnSair: TSpeedButton;
+    edtId: TEdit;
+    edtNome: TEdit;
+    btnExcluir: TButton;
+    memInfoCliente: TMemo;
+    SpeedButton1: TSpeedButton;
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    Fcliente : Tclientes;
+  end;
+
+var
+  frmDeletaCliente: TfrmDeletaCliente;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmDeletaCliente.FormCreate(Sender: TObject);
+begin
+  Fcliente := Tclientes.Create;
+end;
+
+procedure TfrmDeletaCliente.SpeedButton1Click(Sender: TObject);
+begin
+  Fcliente.procurarCliente(StrToInt(edtId.Text));
+  edtNome.Text  := Fcliente.nam;
+end;
+
+end.

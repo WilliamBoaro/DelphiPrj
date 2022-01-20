@@ -1,0 +1,12 @@
+unit uRamais;
+
+interface
+type
+  ramais = class
+  public
+    property
+  end;
+
+implementation
+
+end.
